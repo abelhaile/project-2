@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-   
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Coronavirus Disease 2019 (COVID-19)</title>
+  <title>Bare - Start Bootstrap Template</title>
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+
 </head>
 
 <body>
-     
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
@@ -48,24 +49,47 @@
   </nav>
 
   <!-- Page Content -->
+  <body>
   <div class="container">
-    <img id="myimage" src="img/coronavirus-covid-19.jpg" alt="Covid-19">
-
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Cases in U.S.</h1>
-        <p class="lead">Covid-19 has spread around the planet, sending billions of people into lockdown as health services struggle to cope. Find out where the virus has spread, and where it has been most deadly.</p>
-        <ul class="list-unstyled">
-          <li>Since first being recorded late last year in China, the Covid-19 coronavirus has spread around the world, and been declared <li>
-          <li>pandemic by the World Health Organization. However, differences in testing mean that the number of cases may be understated for some countries.</li>
-        </ul>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="well">
+          <br>
+          <h4>States Covid-19 Breakout:</h4>
+          <h6><select id="selDataset" onchange="optionChanged(this.value)"></select></h6>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"></h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubbleConfirmed"></div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubbleDeath"></div>
       </div>
     </div>
   </div>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="covid2.js"></script>
 
 </body>
 

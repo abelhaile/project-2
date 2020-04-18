@@ -85,8 +85,8 @@ Highcharts.chart('container', {
           
      
       }]
-  }, {
+  }, 
      
 
-  }]
+  ]
 });

@@ -100,10 +100,10 @@ d3.json(url, function(response) {
   // Create an overlay object
   var overlayMaps = {
     "heap Map": heat,
-    "Less than 10": Markers10,
-    "Less than 100": Markers100,
-    "Less than 1000": Markers1000,
-    "Less than 10000": Markers10000,
+    "Less than 10 Confirmed": Markers10,
+    "Less than 100 Confirmed": Markers100,
+    "Less than 1000 Confirmed": Markers1000,
+    "Less than 10000 Confirmed": Markers10000,
 
   };
 
